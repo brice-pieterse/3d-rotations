@@ -1,0 +1,27 @@
+{
+  "name": "rotation3d.js",
+  "version": "1.0.0",
+  "description": "Library that consolidates and simplifies various rotation operators including quaternions, arbitrary axis matrix, and rodriguez rotation formula",
+  "main": "build/rotation.js",
+  "types": "build/Rotation.d.ts",
+  "module": "build/rotation.module.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node ./Test.mjs"
+  },
+  "keywords": [
+    "quaternion",
+    "matrix",
+    "vector",
+    "rotation"
+  ],
+  "author": "Brice Pieterse",
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "tslib": "^2.6.3"
+  }
+}
