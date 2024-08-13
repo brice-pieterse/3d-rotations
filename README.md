@@ -11,6 +11,7 @@ To rotate some vector $\vec{v}$ around an arbitrary axis $\vec{n} = (a, b, c)$, 
 \begin{bmatrix} a^2(1-\cos\theta) + \cos\theta & ab(1-\cos\theta) - c\sin\theta & ac(1-\cos\theta) + b\sin\theta \\ ab(1-\cos\theta) + c\sin\theta & b^2(1-\cos\theta) + \cos\theta & bc(1-\cos\theta) - a\sin\theta \\ ac(1-\cos\theta) - b\sin\theta & bc(1-\cos\theta) + a\sin\theta & c^2(1-\cos\theta) + \cos\theta \end{bmatrix}
 ``` 
 
+
 A derivation of this is possible by applying the following formula, known as Rodrigues rotation, for rotating a vector around an axis:
 
 > $\cos\theta * \vec{v} + (1-\cos\theta)(\vec{v} \cdot \vec{n})\vec{n} + \sin\theta * (\vec{n} \times \vec{v})$
