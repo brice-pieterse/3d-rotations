@@ -1,20 +1,20 @@
-### 3D Rotations
+# 3D Rotations
 
 While the notion of "Rotation" can be extended to general vector spaces, they're used most practically in $R^2$ and $R^3$. This project focuses on the latter, and specifically two interesting methods of performing these transformations:
 
 
-#### Arbitrary Axis Rotation Matrices
+### Arbitrary Axis Rotation Matrices
 
 To rotate some vector $\vec{v}$ around an arbitrary axis $\vec{n} = (a, b, c)$, we can use the following transformation matrix:
 
-$\ [T] = \begin{bmatrix} a^2(1-\cos\theta) + \cos\theta & ab(1-\cos\theta) - c\sin\theta & ac(1-\cos\theta) + b\sin\theta \\ ab(1-\cos\theta) + c\sin\theta & b^2(1-\cos\theta) + \cos\theta & bc(1-\cos\theta) - a\sin\theta \\ ac(1-\cos\theta) - b\sin\theta & bc(1-\cos\theta) + a\sin\theta & c^2(1-\cos\theta) + \cos\theta \end{bmatrix}$
+$[T] = \begin{bmatrix} a^2(1-\cos\theta) + \cos\theta & ab(1-\cos\theta) - c\sin\theta & ac(1-\cos\theta) + b\sin\theta \\ ab(1-\cos\theta) + c\sin\theta & b^2(1-\cos\theta) + \cos\theta & bc(1-\cos\theta) - a\sin\theta \\ ac(1-\cos\theta) - b\sin\theta & bc(1-\cos\theta) + a\sin\theta & c^2(1-\cos\theta) + \cos\theta \end{bmatrix}$
 
 A derivation of this is possible by applying the following formula, known as Rodrigues rotation, for rotating a vector around an axis:
 
 > $\cos\theta * \vec{v} + (1-\cos\theta)(\vec{v} \cdot \vec{n})\vec{n} + \sin\theta * (\vec{n} \times \vec{v})$
 
 
-#### Quaternions
+### Quaternions
 
 Without diving into the nitty gritty of quaternion algebra, we'll show the connection between the Rodriguez rotation formula above and quaternion rotation.
 
@@ -40,7 +40,7 @@ The quaternion conjugate of $q$ is defined to be:
 $\hat{q} = q_0 - \vec{q} = q_0 - q_1i - q_2j - q_3k$ 
 
 
-It turns out that for some quaternion defined as $q = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec{u}$ and it's congugate $q = \cos\frac{\theta}{2} - \sin\frac{\theta}{2}\vec{u}$, we can prove that the product $qv\hat{q}$ with pure quaternion $v = 0 + \vec{v}$ results in the following expression:
+It turns out that for some quaternion defined as $q = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec{u}$ and its congugate $q = \cos\frac{\theta}{2} - \sin\frac{\theta}{2}\vec{u}$, we can prove that the product $qv\hat{q}$ with pure quaternion $v = 0 + \vec{v}$ results in the following expression:
 
 $qv\hat{q} =$
 
