@@ -56,7 +56,7 @@ $\cos\theta * \vec{v} + (1 − \cos\theta)(\vec{u} · \vec{v})\vec{u} + \sin\the
 Notice this is exactly the Rodriguez rotation formula for rotation a vector $\vec{v}$ about an arbitrary axis given by a unit vector $\vec{u}$!
 
 
-#### Using this library
+## Using this library
 
 This library was meant to be an exploration of the implementation of these two methods.
 
