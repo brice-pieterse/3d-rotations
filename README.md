@@ -21,7 +21,7 @@ A derivation of this is possible by applying the following formula, known as Rod
 
 Without diving into the nitty gritty of quaternion algebra, we'll show the connection between the Rodriguez rotation formula above and quaternion rotation.
 
-A quaternion is composed a real scalar part and an imaginary vector part: $q = q_0 + \vec{q}$
+A quaternion is composed of a real scalar part and an imaginary vector part: $q = q_0 + \vec{q}$
 
 When the real part is 0, we call it a pure quaternion.
 
@@ -53,7 +53,7 @@ $(\cos\frac{\theta}{2}^2 − \sin\frac{\theta}{2}^2 )\vec{v} + 2(\sin\frac{\thet
 
 $\cos\theta * \vec{v} + (1 − \cos\theta)(\vec{u} · \vec{v})\vec{u} + \sin\theta * (\vec{u} × \vec{v})$
 
-Notice this is exactly the Rodriguez rotation formula for rotation a vector $\vec{v}$ about an arbitrary axis given by a unit vector $\vec{u}$!
+This is the Rodriguez rotation formula for rotation a vector $\vec{v}$ about an arbitrary axis given by a unit vector $\vec{u}$
 
 
 ## Using this library
